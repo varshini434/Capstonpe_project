@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Web App</title>
+        <link rel="webStyles.css" href="webStyles.css"> 
+        <style>
+            .app-container{
+                justify-content:center;
+                background-image:linear-gradient(180deg,#fff1eb,#ace0f9);
+            }
+            .app-container,.app-store{
+                display:-ms-flexbox;
+                display:flex;
+            }
+            .app-store{
+                -ms-flex-direction:column;
+                flex-direction:column;
+                -ms-flex-align:center;
+                align-items:center;
+                width:85%;
+                max-width:1110px;
+            }
+            .heading{
+                color:#1e293b;
+                font-size:50px;
+                font-family:Rockwell ;
+                font-weight: 800px;
+                margin-top:40px;
+                margin-bottom:48px
+            }
+            .search-input-container{
+                display:-ms-flexbox;
+                display:flex;
+                -ms-flex-align:center;
+                align-items:center;
+                height:30px;
+                background-color:transparent;
+                width:100%;
+                max-width:300px;
+                border-radius:4px;
+                border:1px solid #7b8794;
+                padding:8px 16px;
+            }
+            .search-input{
+                font-family:"Roboto";
+                font-size:26px;
+                font-weight:400;
+                border:none;
+                outline:none;
+                background-color:transparent;
+                -ms-flex-positive:1;
+                flex-grow:1
+            }
+            .search-icon{
+                width:24px;
+                height:24px;
+            }
+            .tabs-list{
+                display:-ms-flexbox;
+                display:flex;
+                -ms-flex-align:end;
+                align-items:flex-end;
+                padding-left:0;
+                margin-top:32px
+            }
+            .tab-item{
+                list-style-type:none
+            }
+            .tab-button{
+                color:#7b8794;
+                font-family:"Roboto";
+                font-size: 19px;
+                font-weight:500;
+                border:none;
+                border-bottom:2px solid #dfe2e5;
+                padding-left:19px;
+                padding-right:16px;
+                padding-bottom:4px;
+                background-color:transparent;
+                outline:none;
+                cursor:pointer;
+            }
+            .apps-list{
+                display:-ms-flexbox;
+                display:flex;
+                -ms-flex-pack:center;
+                justify-content:center;
+                -ms-flex-wrap:wrap;
+                flex-wrap:wrap;
+                width:110%;
+                padding-left:0;
+            }
+            .app-item{
+                display:-ms-flexbox;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                list-style-type:none;
+                background-color:#fff;
+                border-radius:25px;
+                padding-top:24px;
+                margin: 0px 10px 20px 10px;
+                width:198px;
+            }
+            .app-image{
+                width:102px;
+                height:102px;
+            }
+            .app-name{
+                color:#1e293b;
+                font-family:cursive;
+                font-weight: 549;
+                font-size:24px;
+            }
+            section{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            ul li a{
+                color: black;
+                text-decoration: none;
+            }
+            ul li a:hover{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="app-container">
+            <div class="app-store">
+                <h1 class="heading">App Store</h1>
+
+                <ul class="tabs-list">
+                    <li class="tab-item">
+                        <button type="button" class="tab-button"><a href="#Social">Social</a></button>
+                    </li>
+                    <li class="tab-item">
+                        <button type="button" class="tab-button"><a href="#Games">Games</a></button>
+                    </li>
+                    <li class="tab-item">
+                        <button type="button" class="tab-button"><a href="#News">News</a></button>
+                    </li>
+                    <li class="tab-item">
+                        <button type="button" class="tab-button"><a href="#Food">Food</a></button>
+                    </li>
+                </ul>
+
+                <h1 align="center" class="Social">Social</h1>
+                <section id="Social">
+                    <ul class="apps-list">
+                        <li class="app-item">
+                            <a href="https://www.facebook.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/social-facebook.png" alt="Facebook"></a>
+                            <p class="app-name">Facebook</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.messenger.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/social-messenger.png" alt="Messenger"></a>
+                            <p class="app-name">Messenger</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.whatsapp.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/social-whatsapp.png" alt="Whatsapp"></a>
+                            <p class="app-name">Whatsapp</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.instagram.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/social-instagram.png" alt="Instagram"></a>
+                            <p class="app-name">Instagram</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.snapchat.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/social-snapchat.png" alt="Snapchat"></a>
+                            <p class="app-name">Snapchat</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.twitter.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/social-twitter.png" alt="Twitter"></a>
+                            <p class="app-name">Twitter</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.pinterest.com/"><img class="app-image" src="	https://assets.ccbp.in/frontend/react-js/app-store/social-pinterest.png" alt="Pinterest"></a>
+                            <p class="app-name">Pinterest</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.webchat.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/social-wechat.png" alt="Webchat"></a>
+                            <p class="app-name">Webchat</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.linkedin.com/"><img class="app-image" src="	https://assets.ccbp.in/frontend/react-js/app-store/social-linkedin.png" alt="Linkedin"></a>
+                            <p class="app-name">Linkedin</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://web.telegram.org/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/social-telegram.png" alt="Telegram"></a>
+                            <p class="app-name">Telegram</p> 
+                        </li>
+                    </ul>
+                </section>
+
+                    <h1 align="center">Games</h1>
+                <section id="Games">
+                    <ul class="apps-list">
+                        <li class="app-item">
+                            <a href="https://poki.com/en/g/subway-surfers"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-subway-surfers.png" alt="Subway Surfers"></a>
+                            <p class="app-name">Subway Surfers</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.crossyroad.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-crossy-road.png" alt="Crossy Road"></a>
+                            <p class="app-name">Crossy Road</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.ministone.game.risingsuperchef2&hl=en_IN&gl=US"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-super-chef.png" alt="Super Chef"></a>
+                            <p class="app-name">Super Chef</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://www.angrybirds.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-angry-birds.png" alt="Angry Birds"></a>
+                            <p class="app-name">Angry Birds</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.fingersoft.hillclimb&hl=en_IN&gl=US"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-hill-climb-2.png" alt="Hill Climb 2"></a>
+                            <p class="app-name">Hill Climb 2</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://poki.com/en/g/temple-run-2"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-temple-run.png" alt="Temple Run"></a>
+                            <p class="app-name">Temple Run</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.ansangha.drdriving&hl=en_IN&gl=US"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-dr-driving.png" alt="Dr. Driving"></a>
+                            <p class="app-name">Dr. Driving</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.sonypicturestelevision.smurfslostvillage&hl=en_IN&gl=US"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-smurfs-bubble.png" alt="Smurfs Bubble"></a>
+                            <p class="app-name">Smurfs Bubble</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.kevinbradford.games.firstgrade&hl=en&gl=US"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-grade-learning.png" alt="Grade Learning"></a>
+                            <p class="app-name">Grade Learning</p>
+                        </li>
+                        <li class="app-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.outfit7.mytalkingtomfree&hl=en_IN&gl=US"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/games-my-talking-tom.png" alt="My Talking Tom"></a>
+                            <p class="app-name">My Talking Tom</p> 
+                        </li>
+                    </ul>
+            </section>
+
+                <h1 align="center">News</h1>
+            <section id="News">
+                <ul class="apps-list">
+                    <li class="app-item">
+                        <a href="https://www.inshorts.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-inshorts.png" alt="Inshorts"></a>
+                        <p class="app-name">Inshorts</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.way2news.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-way2news.png" alt="Way2News"></a>
+                        <p class="app-name">Way2News</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.news.google.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-google-news.png" alt="Google News"></a>
+                        <p class="app-name">Google News</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.flipboard.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-flipboard.png" alt="Flipboard"></a>
+                        <p class="app-name">Flipboard</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.smartnews.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-smart-news.png" alt="SmartNews"></a>
+                        <p class="app-name">SmartNews</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.bbc.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-bbc-news.png" alt="BBC News"></a>
+                        <p class="app-name">BBC News</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.edition.cnn.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-cnn-news.png" alt="CNN News"></a>
+                        <p class="app-name">CNN News</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.dailywire.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-daily-wire.png" alt="Daily Wire"></a>
+                        <p class="app-name">Daily Wire</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.apnews.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-ap-news.png" alt="AP News"></a>
+                        <p class="app-name">AP News</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.newsbreak.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/news-news-break.png" alt="News Break"></a>
+                        <p class="app-name">News Break</p> 
+                    </li>
+                </ul>
+            </section>
+
+                <h1 align="center">Food</h1>
+            <section id="Food">
+                <ul class="apps-list">
+                    <li class="app-item">
+                        <a href="https://www.zomato.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-zomato.png" alt="Zomato"></a>
+                        <p class="app-name">Zomato</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.swiggy.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-swiggy.png" alt="Swiggy"></a>
+                        <p class="app-name">Swiggy</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://play.google.com/store/apps/details?id=com.allfoodapp.foodmania&hl=en_IN&gl=US"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-all-in-one.png" alt="All in One"></a>
+                        <p class="app-name">All in One</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.dominos.co.in/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-dominos.png" alt="Domino's Pizza"></a>
+                        <p class="app-name">Domino's Pizza</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.dot.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-dot.png" alt="DOT"></a>
+                        <p class="app-name">DOT</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.grubhub.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-grubhub.png" alt="Grubhub"></a>
+                        <p class="app-name">Grubhub</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.instacart.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-insta-cart.png" alt="Instacart"></a>
+                        <p class="app-name">Instacart</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.mercato.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-mercato.png" alt="Mercato"></a>
+                        <p class="app-name">Mercato</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://www.saucey.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-saucey.png" alt="Saucey"></a>
+                        <p class="app-name">Saucey</p>
+                    </li>
+                    <li class="app-item">
+                        <a href="https://go.waitrapp.com/"><img class="app-image" src="https://assets.ccbp.in/frontend/react-js/app-store/food-waitr.png" alt="Waitr"></a>
+                        <p class="app-name">Waitr</p> 
+                    </li>
+                </ul>
+            </section>
+            </div>
+        </div>
+    </body>
+</html>
